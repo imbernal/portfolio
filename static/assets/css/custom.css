@@ -1,0 +1,198 @@
+#about{
+	text-align: center;
+}
+
+.navbar{
+	position: absolute !important;
+	background-color: rgba(69, 67, 68, 0.33) !important;
+	box-shadow: 0 4px 8px 0 !important;
+
+}
+#imgLogo{
+	width: 150px;
+	margin-top: 14px;
+}
+
+#navbarId{
+	width: 100% !important;
+	z-index: 1 !important;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #fcfcfc !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #fcfcfc !important;
+}
+
+.navbar-default{
+	border-color: inherit !important;
+}
+
+.img-navbar{
+	margin-left: 2% !important;
+}
+
+.skillbar-title{
+		background: #ec3022;
+}
+
+.avatar:hover {
+	box-shadow: 0px 0px 0px 0px rgba(200, 95, 66, 0.4) inset, 0px 0px 0px 16px rgba(255, 255, 255, 0.84) inset, 0px 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.ul-navbar{
+	color: white;
+	list-style: none;
+	float: right;
+	margin-top: 20px;
+}
+
+.ul-navbar li{
+	display: inline;
+	margin-right: 10px;
+}
+
+.ul-navbar li a{
+	color:white;
+	font-size: 17px;
+}
+
+.navbarInPositionFixed{
+	position: fixed;
+	z-index: 20000;
+	background-color: rgba(69, 67, 68, 0.78);
+	box-shadow: 0 4px 8px 0;
+}
+
+#firstImage{
+	width: 230px;
+	height: 230px;
+}
+.cover-heading{
+	font-size: 40px !important;
+}
+
+.lead{
+	font-size: 20px !important;
+}
+/*Animation*/
+.html{
+	background: rgb(230, 126, 34) !important;
+	animation: html 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.css{
+	background: rgb(52, 152, 219) !important;
+	animation: css 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.jquery{
+	background: rgb(44, 62, 80) !important;
+	animation: jquery 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.angular{
+	background: #F44336 !important;
+	animation: angular 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.javascript{
+	background: #9E9E9E !important;
+	animation: javascript 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.symfony{
+	background: rgb(90, 104, 165) !important;
+	animation: symfony 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+.wordpress{
+	background: rgb(82, 82, 82) !important;
+	animation: wordpress 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.seo{
+	background: rgb(46, 204, 113) !important;
+	animation: seo 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.django{
+	background: rgb(66, 136, 208) !important;
+	animation: django 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+.git{
+	background: rgb(82, 82, 82) !important;
+	animation: git 2s cubic-bezier(0.01, 0.03, 0.33, 0.65);
+	animation-fill-mode: forwards;
+}
+
+#arrowHeader{
+
+	animation: arrow .8s cubic-bezier(0.47, 0.08, 0.57, 0.78) infinite;
+
+}
+
+@keyframes arrow {
+	0%{ margin-top: 0%}
+	100%{ margin-top: 2%}
+}
+
+
+@keyframes html {
+	0%{ width: 0%}
+	100%{ width: 97%}
+}
+
+@keyframes css {
+	0%{ width: 0%}
+	100%{  width: 90%}
+}
+@keyframes jquery {
+	0%{ width: 0%}
+	100%{ width: 95%}
+}
+@keyframes angular {
+	0%{ width: 0%}
+	100%{  width:96%}
+}
+@keyframes javascript {
+	0%{ width: 0%}
+	100%{ width: 98%}
+}
+@keyframes symfony {
+	0%{ width: 0%}
+	100%{  width: 85%}
+}
+@keyframes wordpress {
+	0%{ width: 0%}
+	100%{width: 85%;}
+}
+
+@keyframes django {
+	0%{ width: 0%}
+	100%{  width: 89%}
+}
+
+@keyframes seo {
+	0%{ width: 0%}
+	100%{  width: 97%}
+}
+
+@keyframes git {
+	0%{ width: 0%}
+	100%{ width: 100%}
+}
+
+
+/*Queries*/
