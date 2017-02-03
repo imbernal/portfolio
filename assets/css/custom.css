@@ -140,6 +140,7 @@
 #arrowHeader{
 
 	animation: arrow .8s cubic-bezier(0.47, 0.08, 0.57, 0.78) infinite;
+	animation-direction: alternate ;
 
 }
 
@@ -160,15 +161,15 @@
 }
 @keyframes jquery {
 	0%{ width: 0%}
-	100%{ width: 95%}
+	100%{ width: 80%}
 }
 @keyframes angular {
 	0%{ width: 0%}
-	100%{  width:96%}
+	100%{  width:70%}
 }
 @keyframes javascript {
 	0%{ width: 0%}
-	100%{ width: 98%}
+	100%{ width: 85%}
 }
 @keyframes symfony {
 	0%{ width: 0%}

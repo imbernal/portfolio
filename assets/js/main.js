@@ -33,13 +33,7 @@ $(document).ready(function(){
         $(e).addClass($(this).data("class"));
       });
     }
-
-    if(document.body.scrollTop >= 2000 || document.body.scrollTop < 1200  ){
-
-      $(".skillbar-bar").each(function(i,e){
-        $(e).removeClass($(this).data("class"));
-      });
-    }
+    
 
   });
 
@@ -47,10 +41,12 @@ $(document).ready(function(){
     e.preventDefault();
 
     $.ajax({
-      url: "http://localhost:2998/info",
+
+      url: "http://ibernal.fvi-grad.com:2998/info",
       method: "post",
       data: $('#contactMe').serialize(),
       success: function(){
+
         $('#contactMe')[0].reset();
       }
     });

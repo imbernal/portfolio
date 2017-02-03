@@ -15,11 +15,28 @@ var smtpTransport = nodemailer.createTransport(smtpTransport({
 }));
 
 
-app.use(express.static("static"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
+app.use(function (req, res, next) {
 
-app.post("/info" , function(req , res){
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', 'http://ibernal.fvi-grad.com:2998');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    // Request headers you wish to allow
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // Set to true if you need the website to include cookies in the requests sent
+    // to the API (e.g. in case you use sessions)
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+    // Pass to next layer of middleware
+    next();
+});
+
+app.post("http://ibernal.fvi-grad.com/info" , function(req , res){
 
   var mailData = {
     from: req.body.email,
@@ -38,6 +55,8 @@ app.post("/info" , function(req , res){
   res.status(200).send(req.body.name);
 
 });
+
+
 
 
 app.listen(2998 , ()=>{
